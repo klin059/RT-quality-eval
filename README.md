@@ -6,7 +6,7 @@ The planning process for radiotherapy treatments consists of repeated plan optim
 plan evaluation. The planner needs to set some optimization parameters in a commercial treatment planning software  
 in order to generate a plan. The plan is evaluated and the planner adjust the optimization 
 parameters in order to improve the plan. The optimization process is time consuming and the effect of parameter
-tuning is unknown a priori. Additionally, due to patient specific geometrical  
+tuning is unknown a priori. Additionally, due to patient specific geometrical 
 structural variations, evaluating the quality of a plan is difficult. 
 As a consequences, the quality of the final treatment plan depends on the experience 
 of a planner and the time used on planning.
