@@ -1,25 +1,32 @@
+![](images/planning_process.gif)
+
 # Radiotherapy quality evaluation using machine learning
 Radiotherapy treatment is one of the most effective non-surgical cancer treatment modality. 
 It uses external ionising radiotherapy to control or eliminate cancerous cells. 
 
-The planning process for radiotherapy treatments consists of repeated plan optimization and 
-plan evaluation. The planner needs to set some optimization parameters in a commercial treatment planning software  
-in order to generate a plan. The plan is evaluated and the planner adjust the optimization 
-parameters in order to improve the plan. The optimization process is time consuming and the effect of parameter
-tuning is unknown a priori. Additionally, due to patient specific geometrical  
-structural variations, evaluating the quality of a plan is difficult. 
-As a consequences, the quality of the final treatment plan depends on the experience 
-of a planner and the time used on planning.
+The planning process for radiotherapy treatments consists of repeated __plan optimization__ and 
+__plan evaluation__. The planner needs to set some optimization parameters in a commercial treatment planning software 
+in order to generate a plan. The plan is evaluated based on a list of treatment evaluation criteria, 
+the so-callede dose-volume histograms and the spatial 
+dose distributions (examined through 2D slices of the treatment site). 
+
+Due to patient specific geometrical structural variations, evaluating the quality of a plan is difficult. 
+Clinical evvaluation protocols are based on population-based statistics and are not specifically designed to a
+patient. If a plan is not deemed satisfactory, the planner adjusts the optimization 
+parameters in order to improve the plan. The optimization process can take serveral minutes and 
+it is uncertain if the adjustment will lead to 
+an improvement. As a consequence, a treatment plan tends to be accepted as long as it achieves the 
+minimal requirements. 
 
 ![](images/plan-optimization-process.PNG)
 
 In this work, we develop a data-driven plan evaluation tool using machine learning 
 techniques. We build a classification model that predicts plan acceptability based 
-on clinical evaluation criteria and geometrical features. The model results
-are feed into a model interpreter which will show the strength and weaknesses 
-of a given plan. The planner will be able to make informed evaluation on the treatment 
-quality, hence saves time in the planning process and ensures the plan quality is 
-satisfactory.
+on the geometrical features and the radiation dose to different structures. The model results
+are feed into a model interpreter which will show the strengths and weaknesses 
+of a given plan. The planner will be able to make unbiased evaluation on the plan 
+quality hence saves time in the planning process and ensures the plan quality is truly
+optimal.
 
 ## Example of the plan evaluation output
 
