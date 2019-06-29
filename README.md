@@ -1,6 +1,22 @@
-![](images/planning_process.gif)
+<p align="center">
+  <img height="300" src="images/planning_process.gif">
+</p>
 
 # Radiotherapy quality evaluation using machine learning
+
+## Technical aspect
+This work involves developing a machine learning tool for evaluating the quality of 
+radiotherapy treatment plans, which is a highly subjective and experience-dependent 
+task. The underlying dataset is high dimensional (162 by 782) consists of geometrical 
+features, the clinical evaluation criteria and several engineered features based on 
+domain knowledge. There are correlations and interactions between the features e.g. structures 
+in close proximity is likely to receive similar dose and the deliberate sparing 
+of a structure is likely to cause an increased dose to the other structure. Model stacking 
+of various structural-based sub-models and extreme randomised trees are used to capture the 
+interations and to ensure all relevant clinical criteria contribute to the model. Final 
+classification model achieves a 80% cross validation accuracy score.
+
+## Motivation
 Radiotherapy treatment is one of the most effective non-surgical cancer treatment modality. 
 It uses external ionising radiotherapy to control or eliminate cancerous cells. 
 
@@ -20,6 +36,7 @@ minimal requirements.
 
 ![](images/plan-optimization-process.PNG)
 
+## Research output
 In this work, we develop a data-driven plan evaluation tool using machine learning 
 techniques. We build a classification model that predicts plan acceptability based 
 on the geometrical features and the radiation dose to different structures. The model results
@@ -28,7 +45,7 @@ of a given plan. The planner will be able to make unbiased evaluation on the pla
 quality hence saves time in the planning process and ensures the plan quality is truly
 optimal.
 
-## Example of the plan evaluation output
+### Example of the plan evaluation output
 
 ![](images/explain-plan-quality.PNG)
 
