@@ -1,5 +1,5 @@
 # Radiotherapy quality evaluation using machine learning
-Unfortunately we will not be able to share the data due to ethical issumes. Codes might be available after the work
+Unfortunately we will not be able to share the data due to ethical issues. Codes might be available after the work
 is published. 
 
 ## Technical aspect
