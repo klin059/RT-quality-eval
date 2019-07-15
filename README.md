@@ -1,8 +1,6 @@
-<p align="center">
-  <img height="300" src="images/planning_process.gif">
-</p>
-
 # Radiotherapy quality evaluation using machine learning
+Unfortunately we will not be able to share the data due to ethical issumes. Codes might be available after the work
+is published. 
 
 ## Technical aspect
 This work involves developing a machine learning tool for evaluating the quality of 
