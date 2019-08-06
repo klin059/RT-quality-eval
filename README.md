@@ -1,6 +1,6 @@
 # Radiotherapy quality evaluation using machine learning
 Unfortunately we will not be able to share the data due to ethical issues. Codes might be available after the work
-is published. 
+is published. The folowing sections describe the technical problem and solution approach used for this project.
 
 ## Technical aspect
 This work involves developing a machine learning tool for evaluating the quality of 
@@ -8,11 +8,11 @@ radiotherapy treatment plans, which is a highly subjective and experience-depend
 task. The underlying dataset is high dimensional (162 by 782) consists of geometrical 
 features, the clinical evaluation criteria and several engineered features based on 
 domain knowledge. There are correlations and interactions between the features e.g. structures 
-in close proximity is likely to receive similar dose and the deliberate sparing 
+in close proximity are likely to receive similar doses and the deliberate sparing 
 of a structure is likely to cause an increased dose to the other structure. Model stacking 
 of various structural-based sub-models and extreme randomised trees are used to capture the 
 interations and to ensure all relevant clinical criteria contribute to the model. Final 
-classification model achieves a 80% cross validation accuracy score.
+classification model achieves an 80% cross validation accuracy score.
 
 ## Motivation
 Radiotherapy treatment is one of the most effective non-surgical cancer treatment modality. 
